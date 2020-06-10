@@ -134,9 +134,6 @@ diff(From, To, Path, Log) ->
   [#{op => replace, path => path(Path), value => To, orig_value => From}|Log].
 
 
-%% TODO handle move operator in revert
-%% TODO check move operator in apply_diff
-
 -spec diff(From, To, UpdateFun) -> Res when
       From :: map(),
       To :: map(),
